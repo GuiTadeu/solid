@@ -17,4 +17,9 @@ public class Promocao implements Reajuste {
     public LocalDate data() {
         return data;
     }
+
+    @Override
+    public BigDecimal valorImpostoDeRenda() {
+        return valor.multiply(new BigDecimal("0.1"));
+    }
 }

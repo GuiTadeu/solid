@@ -17,4 +17,9 @@ public class Anuenio implements Reajuste {
     public LocalDate data() {
         return data;
     }
+
+    @Override
+    public BigDecimal valorImpostoDeRenda() {
+        return BigDecimal.ZERO; // Faz sentido Anuenio ter imposto?
+    }
 }
